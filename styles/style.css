@@ -123,7 +123,7 @@ input:focus {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   outline: none;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   width: 224px;
 }
@@ -201,7 +201,7 @@ input:focus {
   flex-direction: column;
   margin-left: 30px;
   width: 399px;
-  height: 534px;
+  min-height: 534px;
   gap: 26px;
 }
 
@@ -220,7 +220,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 36px;
-  height: 401px;
+  height: 256px;
   flex-grow: 1;
   overflow-y: auto;
 }
@@ -253,7 +253,7 @@ input:focus {
   flex-grow: 1;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -264,29 +264,13 @@ input:focus {
   display: block;
   cursor: pointer;
 }
-
+.content__card-link.content__card-link_current,
 .content__card-link:active {
   background-color: #545050;
 }
-
 .content__card-link:hover {
   text-decoration: underline;
 }
-
-.content__video-card-description-container:active {
-  background-color: rgb(255 255 255 / 0.2);
-  text-decoration: none;
-}
-
-.content__video-card-description-container:hover {
-  text-decoration: underline solid #fff;
-  text-underline-offset: 2px;
-}
-
-.content__video-card-description-container:focus-visible {
-  outline: 1px solid #fff;
-}
-
 .content__video-card {
   display: flex;
   flex-direction: row;
@@ -311,6 +295,7 @@ input:focus {
   color: #fff;
   cursor: pointer;
   flex-shrink: 0;
+  min-height: 34px;
 }
 
 .button:hover {
@@ -324,53 +309,32 @@ input:focus {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .button:active {
-  background-color: rgb(255 255 255 / 0.2);
+  background-color: #545050;
   text-decoration: none;
 }
 
 .search-form__submit-button {
   justify-self: flex-end;
   flex-grow: 1;
-  cursor: pointer;
   align-self: end;
 }
 
 .more-button {
   width: 100%;
-  cursor: pointer;
 }
 
 .search-form__checkbox:focus-visible + .search-form__pseudo-checkbox {
   border-color: #fff;
 }
 
-.button,
-.search-form__submit-button,
-.more-button {
-  cursor: pointer;
-  height: 34px;
-}
-
 .result__video-container,
 .content__list-container {
   position: relative;
 }
-
-.content__card-link:hover .content__video-card-title {
-  text-decoration: underline;
-  text-decoration-color: #fff;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-}
-
-.search-form__checkbox:focus + .search-form__pseudo-checkbox {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
-  border-color: #ffffff;
-}
-
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
