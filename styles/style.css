@@ -182,7 +182,7 @@ input:focus {
   height: 19px;
   border: 1px solid #fff;
   padding: 1px;
-  position:  relative;
+  position: relative;
   box-sizing: border-box;
 }
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -273,13 +273,12 @@ input:focus {
   cursor: pointer;
 }
 .content__card-link_current {
-  background-color: #545050; 
+  background-color: #545050;
 }
 
 .content__card-link:active {
-  background-color: #545050; 
+  background-color: #545050;
 }
-
 
 .content__card-link:hover {
   text-decoration: underline;
@@ -322,7 +321,7 @@ input:focus {
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  flex-shrink: 0
+  flex-shrink: 0;
 }
 
 .button:hover {
@@ -356,7 +355,6 @@ input:focus {
 }
 .search-form__checkbox:focus-visible + .search-form__pseudo-checkbox {
   border-color: #fff; /* Цвет рамки становится белым/акцентным */
-
 }
 .button,
 .search-form__submit-button,
