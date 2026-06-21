@@ -143,11 +143,6 @@ input:focus {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
-.search-form__label:has(.search-form__textfield:focus-visible) {
-  border: 1px solid #fff;
-  padding: 11px; /* Компенсируем толщину границы, чтобы элемент не «прыгал» */
-  border-radius: 4px;
-}
 
 .search-form__label:has(.search-form__checkbox):hover {
   text-decoration: underline 1px #fff;
