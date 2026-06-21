@@ -353,12 +353,6 @@ input:focus {
   cursor: pointer;
   height: 34px;
 }
-.search-form__pseudo-checkbox {
-  cursor: pointer;
-}
-.search-form__textfield {
-  cursor: text; /* Стандартный текстовый курсор для полей ввода */
-}
 .result__video-container,
 .content__list-container {
   position: relative;
