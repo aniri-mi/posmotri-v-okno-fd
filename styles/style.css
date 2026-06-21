@@ -55,8 +55,6 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  max-width: 100%;
-  margin: 133px 30px;
 }
 
 .title {
@@ -223,9 +221,7 @@ input:focus {
   flex-direction: column;
   gap: 36px;
   height: 401px;
-  width: 100%;
   flex-grow: 1;
-  min-height: 0;
   overflow-y: auto;
 }
 
@@ -343,7 +339,7 @@ input:focus {
   justify-self: flex-end;
   flex-grow: 1;
   cursor: pointer;
-  margin-top: 20px;
+  align-self: end;
 }
 
 .more-button {
@@ -372,15 +368,6 @@ input:focus {
   text-decoration-color: #fff;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
-}
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox:active {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 6px;
-  outline: 4px solid #fff;
-  outline-offset: 0;
 }
 
 .search-form__checkbox:focus + .search-form__pseudo-checkbox {
