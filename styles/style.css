@@ -182,11 +182,9 @@ input:focus {
   position: relative;
   box-sizing: border-box;
 }
-
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
-
 .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
@@ -195,7 +193,6 @@ input:focus {
   height: 100%;
   opacity: 0;
 }
-
 .content__details {
   display: flex;
   flex-direction: column;
@@ -204,13 +201,11 @@ input:focus {
   min-height: 534px;
   gap: 26px;
 }
-
 .content__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-
 .content__list-item {
   padding: 0 3px;
   width: 100%;
