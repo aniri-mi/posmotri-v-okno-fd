@@ -10,8 +10,8 @@ html {
 
 .page {
   display: flex;
-  justify-content: center; /* Центрируем по горизонтали */
-  align-items: center; /* Центрируем по вертикали */
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -39,6 +39,7 @@ ul,
 ol {
   list-style: none;
 }
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -51,12 +52,13 @@ ol {
 
 .content {
   display: flex;
-  flex-direction: row; /* Располагаем элементы в строку */
-  justify-content: space-between; /* Распределяем с отступами */
-  align-items: flex-end; /* Прижимаем к низу контейнера */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
   max-width: 100%;
   margin: 133px 30px;
 }
+
 .title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -72,19 +74,19 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Прижимаем к левому краю */
-  justify-content: flex-start; /* Прижимаем к верху */
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 16px; /* Внешний отступ снизу */
+  margin-bottom: 16px;
 }
 
 .result__video {
   width: 100%;
-  height: 100%px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -92,10 +94,10 @@ ol {
   width: 711px;
   height: 54px;
   display: flex;
-  flex-direction: row; /* Располагаем элементы в строку (горизонтально) */
-  justify-content: space-between; /* Пропорционально распределяем свободное пространство между элементами */
-  align-items: flex-start; /* Прижимаем элементы к верхней части контейнера (по вертикальной оси) */
-  gap: 42px; /* Добавляем отступы между элементами  */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 42px;
 }
 
 .search-form__fieldset {
@@ -114,6 +116,7 @@ input {
 input:focus {
   outline: none;
 }
+
 .search-form__textfield {
   appearance: none;
   line-height: 100%;
@@ -121,7 +124,7 @@ input:focus {
   background-color: transparent;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  outline: none; /* Сброс стандартной обводки */
+  outline: none;
   font-family: Fira Sans Condensed;
   font-weight: 400;
   width: 224px;
@@ -139,6 +142,7 @@ input:focus {
   gap: 5px;
   cursor: pointer;
 }
+
 .search-form__label:has(.search-form__textfield:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
@@ -154,17 +158,17 @@ input:focus {
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: 1px solid#fff;
+  outline: 1px solid #fff;
 }
 
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 400; /* Жирный шрифт  */
-  font-size: 18px; /* Увеличенный размер */
+  font-weight: 400;
+  font-size: 18px;
   font-style: normal;
-  line-height: 100%; /* Плотный интерлиньяж для брутальности */
-  margin-bottom: 10px; /* Отступ снизу до чекбоксов/поля ввода */
-  color: #fff; /* Белый цвет текста */
+  line-height: 100%;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .search-form__checkbox-list {
@@ -180,6 +184,7 @@ input:focus {
   position: relative;
   box-sizing: border-box;
 }
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
@@ -192,18 +197,19 @@ input:focus {
   height: 100%;
   opacity: 0;
 }
+
 .content__details {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
   width: 399px;
   height: 534px;
-  gap: 26px; /* Отступ между заголовком и списком карточек */
+  gap: 26px;
 }
 
 .content__list {
   display: flex;
-  flex-wrap: wrap; /* Карточки будут переноситься на новую строку */
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -215,13 +221,12 @@ input:focus {
 .content__list-container {
   display: flex;
   flex-direction: column;
-  gap: 36px; /* Отступ между последней карточкой и кнопкой "Показать ещё" */
-  height: 401px; /* Жесткая высота */
+  gap: 36px;
+  height: 401px;
   width: 100%;
-  flex-grow: 1; /* Занимает всё оставшееся пространство */
-  min-height: 0; /* Предотвращает переполнение в flex контейнерах */
-  overflow-y: auto; /* Включаем вертикальную прокрутку при переполнении */
-  overflow-x: hidden;
+  flex-grow: 1;
+  min-height: 0;
+  overflow-y: auto;
 }
 
 .content__video-card-description-container {
@@ -237,8 +242,8 @@ input:focus {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
-  white-space: nowrap; /* Запрещает перенос текста на новую строку */
-  text-overflow: ellipsis; /* Добавляет многоточие в конце обрезанного текста */
+  white-space: nowrap;
+  text-overflow: ellipsis;
   width: 196px;
   overflow: hidden;
 }
@@ -249,12 +254,12 @@ input:focus {
   font-style: normal;
   font-size: 18px;
   line-height: 16.2px;
-  flex-grow: 1; /* Если нужно растянуть текст, либо используйте overflow */
-  display: -webkit-box; /* Необходимо для работы -webkit-line-clamp */
+  flex-grow: 1;
+  display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; /* Обрезаем описание до 2 строк */
-  overflow: hidden; /* Скрываем всё, что выходит за границы блока */
-  text-overflow: ellipsis; /* Добавляем многоточие в конце обрезанного текста */
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__card-link {
@@ -263,6 +268,7 @@ input:focus {
   display: block;
   cursor: pointer;
 }
+
 .content__card-link_current {
   background-color: #545050;
 }
@@ -291,8 +297,8 @@ input:focus {
 
 .content__video-card {
   display: flex;
-  flex-direction: row; /* Элементы выстраиваются в строку (слева направо) */
-  align-items: flex-start; /* Прижимаем к верху */
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .content__video-card-thumbnail {
@@ -344,26 +350,30 @@ input:focus {
   width: 100%;
   cursor: pointer;
 }
+
 .search-form__checkbox:focus-visible + .search-form__pseudo-checkbox {
-  border-color: #fff; /* Цвет рамки становится белым/акцентным */
+  border-color: #fff;
 }
+
 .button,
 .search-form__submit-button,
 .more-button {
   cursor: pointer;
   height: 34px;
 }
+
 .result__video-container,
 .content__list-container {
   position: relative;
 }
 
 .content__card-link:hover .content__video-card-title {
-  text-decoration: underline; /* Подчёркиваем заголовок карточки при наведении на ссылку */
-  text-decoration-color: #fff; /* Цвет подчёркивания*/
-  text-decoration-thickness: 1px; /* Толщина линии подчёркивания */
-  text-underline-offset: 2px; /* Отступ линии от текста для лучшей читаемости */
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox:active {
   content: "";
   position: absolute;
@@ -372,11 +382,12 @@ input:focus {
   outline: 4px solid #fff;
   outline-offset: 0;
 }
+
 .search-form__checkbox:focus + .search-form__pseudo-checkbox {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
   border-color: #ffffff;
 }
-/* Кастомный скроллбар */
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
